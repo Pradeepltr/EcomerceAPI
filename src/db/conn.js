@@ -1,6 +1,6 @@
 const mongoose=require("mongoose")
 
-mongoose.connect("mongodb://localhost:27017/products-api",{
+mongoose.connect("mongodb+srv://pradeep:pradeep@cluster0.4a6pc.mongodb.net/API?retryWrites=true&w=majority",{
     
     useNewUrlParser:true,
     useUnifiedTopology:true,
