@@ -1,5 +1,5 @@
 const mongoose=require("mongoose")
-
+// Connect online mongo Atlas databse through mongoose
 mongoose.connect("mongodb+srv://pradeep:pradeep@cluster0.4a6pc.mongodb.net/API?retryWrites=true&w=majority",{
     
     useNewUrlParser:true,

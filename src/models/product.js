@@ -1,6 +1,6 @@
+// Require mongoose to create datbase schema
 const mongoose=require("mongoose");
-const validator=require("validator");
-
+// create database schema field to store data
 const productSchema=new mongoose.Schema({
    
     name:{
