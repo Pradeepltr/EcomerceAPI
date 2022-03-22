@@ -46,11 +46,20 @@ app.delete("/products/:id",async(req,res)=>{
     }
 })
 // Patch call from update data that present in database
-app.patch("/products/:id",async(req,res)=>{
+app.patch("/products/:id/update_quantity",async(req,res)=>{
     try{
        const _id=req.params.id;
+       console.log(_id)
+       const val_find=await Product.findById(_id)
+       const val1=val_find.quantity
+       const val2=req.query.number;
+       const update_quan=parseInt(val1)+parseInt(val2);
+       console.log(update_quan);
+       const data={
+        "quantity":update_quan
+       }
        
-       const updateData=await Product.findByIdAndUpdate(_id,req.body,{
+       const updateData=await Product.findByIdAndUpdate(_id,data,{
         new:true
        })
        res.send(updateData)

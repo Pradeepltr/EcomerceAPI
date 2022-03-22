@@ -5,11 +5,11 @@
   "main": "index.js",
   "engines": {
     "node": "16.13.1",
-    "npm":"8.1.2"
+    "npm": "8.1.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node src/App.js"
+    "start": "nodemon src/App.js"
   },
   "keywords": [],
   "author": "",
